@@ -1,0 +1,50 @@
+- handle: wine-maheshwari-silk
+  name: Wine Maheshwari silk
+  type: Silk
+  color: Deep wine with antique gold border
+  price: 7950
+  compare_at_price: 8500
+  badge: New
+  image_url: /assets/images/saree-wine.jpg
+  description: |
+    A luxurious handloom Maheshwari silk saree in deep wine with intricate antique gold zari border. Perfect for evening wear.
+    
+    **Details:**
+    - Pure silk with cotton body
+    - Handwoven zari motifs
+    - Contrasting gold check pallu
+    - 5.5m + 0.75m blouse piece
+
+- handle: sand-gold-checkered
+  name: Sand gold checkered
+  type: Cotton-silk
+  color: Sand beige with gold checks
+  price: 6250
+  compare_at_price: 6800
+  badge: Bestseller
+  image_url: /assets/images/saree-sand.jpg
+  description: |
+    Lightweight cotton-silk Maheshwari saree in warm sand beige with delicate gold checkered motifs. Ideal for everyday elegance.
+    
+    **Details:**
+    - Cotton-silk blend
+    - Minimal gold checks
+    - Subtle check pattern pallu
+    - 5.5m + 0.75m blouse piece
+
+- handle: noir-border-palla
+  name: Noir border palla
+  type: Silk
+  color: Black body with contrast palla
+  price: 9400
+  compare_at_price: 9950
+  badge: Limited
+  image_url: /assets/images/saree-noir.jpg
+  description: |
+    Limited edition noir silk Maheshwari saree with dramatic contrast palla and rich gold border. Statement piece for modern evenings.
+    
+    **Details:**
+    - Pure silk
+    - Heavy gold zari border
+    - Contrast maroon-gold pallu
+    - 5.5m + 0.75m blouse piece

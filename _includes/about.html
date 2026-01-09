@@ -1,0 +1,291 @@
+<section class="about-hero">
+    <div class="hero-card hero-large">
+        <div class="hero-badge">Our Story</div>
+        <h1 class="hero-title">DevRaj Maheshwari<br>Handloom Heritage</h1>
+        <p class="hero-sub large">
+            Curating limited-run sarees handwoven by master artisans in Maheshwar,
+            Madhya Pradesh—the cradle of India's finest handloom traditions.
+        </p>
+    </div>
+</section>
+
+<!-- Heritage Section -->
+<section class="about-section">
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>The Maheshwar Legacy</h2>
+            <p>
+                Maheshwari sarees trace their lineage to the 18th century, when
+                Rani Ahilyabai Holkar established the looms of Maheshwar. Our
+                collections honor this heritage with pure silk-cotton blends,
+                geometric motifs, and zari borders handwoven by families who've
+                mastered this craft for generations.
+            </p>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">1732</span>
+                    <span>Years of tradition</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">42</span>
+                    <span>Artisan families</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">127</span>
+                    <span>Looms active</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <div class="image-placeholder loom-bg">
+                Maheshwar looms at work
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="about-process">
+    <h2 class="section-heading centered">From Thread to Saree</h2>
+    <div class="process-grid">
+        <div class="process-step">
+            <div class="step-number">1</div>
+            <h3>Hand-spun yarn</h3>
+            <p>Artisans spin fine cotton and silk yarns by hand, creating the perfect tension for weaving.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">2</div>
+            <h3>Warp preparation</h3>
+            <p>Threads are meticulously aligned on traditional pit looms, a process taking 3-4 days.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">3</div>
+            <h3>Zari borders</h3>
+            <p>Intricately woven gold and silver motifs frame each saree, hand-drawn by master weavers.</p>
+        </div>
+        <div class="process-step">
+            <div class="step-number">4</div>
+            <h3>Final pallu</h3>
+            <p>The signature pallu with geometric patterns completes each masterpiece (7-10 days total).</p>
+        </div>
+    </div>
+</section>
+
+<!-- Artisan Spotlight -->
+<section class="artisan-spotlight">
+    <div class="hero-card">
+        <div class="spotlight-grid">
+            <div>
+                <h2>Meet Shanti Devi</h2>
+                <p class="hero-sub">
+                    4th generation weaver from Maheshwar. Shanti oversees our zari border
+                    production, training the next generation of artisans in traditional
+                    techniques passed down through her family.
+                </p>
+                <blockquote>"Each saree carries 200 years of my family's skill."</blockquote>
+            </div>
+            <div class="spotlight-image">
+                <div class="image-placeholder artisan-bg">
+                    Shanti Devi at loom
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="hero-card cta-card">
+        <h2>Discover the Collection</h2>
+        <p>Each saree tells a story of heritage, skill, and timeless beauty.</p>
+        <a href="{{ '/shop/' | relative_url }}" class="btn-primary large">
+            Explore Sarees
+            <span>→</span>
+        </a>
+    </div>
+</section>
+
+<style>
+    /* About Page */
+.about-page {
+  padding-top: 20px;
+}
+
+.hero-large .hero-sub {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.about-section {
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #6b5a4a;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #7b6b5a;
+  letter-spacing: 0.1em;
+}
+
+.about-image, .spotlight-image {
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf9f5 0%, #f8f2ec 100%);
+  font-size: 14px;
+  color: #7b6b5a;
+}
+
+.loom-bg { background: linear-gradient(45deg, #e8d9c6, #d4c4a8); }
+.artisan-bg { background: linear-gradient(45deg, #f0e6d2, #e2d5b8); }
+
+.about-process {
+  padding: 80px 0;
+  background: #fdf9f5;
+}
+
+.section-heading.centered {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 24px;
+}
+
+.step-number {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 16px;
+}
+
+.process-step h3 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.process-step p {
+  color: #6b5a4a;
+  font-size: 14px;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.spotlight-grid h2 {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+blockquote {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--primary);
+  margin: 24px 0;
+  padding-left: 24px;
+  border-left: 3px solid var(--accent);
+}
+
+.cta-section {
+  padding: 80px 0;
+}
+
+.cta-card {
+  text-align: center;
+}
+
+.cta-card h2 {
+  font-size: 32px;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.cta-card p {
+  font-size: 18px;
+  color: #6b5a4a;
+  margin-bottom: 32px;
+}
+
+.btn-primary.large {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-grid, .spotlight-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .about-image {
+    height: 280px;
+  }
+  
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>

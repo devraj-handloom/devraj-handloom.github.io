@@ -1,0 +1,64 @@
+<div class="product-detail-main">
+  <div class="product-detail-image">
+    {% if include.product.image_url %}
+      <img src="{{ include.product.image_url | relative_url }}"
+           alt="{{ include.product.name }} saree" />
+    {% else %}
+      <div class="image-placeholder">Image coming soon</div>
+    {% endif %}
+  </div>
+
+  <div class="product-detail-info">
+    <div class="product-detail-badge">{{ include.product.badge }}</div>
+    <h1 class="product-detail-name">{{ include.product.name }}</h1>
+    <p class="product-detail-meta">
+      {{ include.product.type }} • {{ include.product.color }}
+    </p>
+
+    <div class="product-detail-price">
+      ₹{{ include.product.price }}
+      {% if include.product.compare_at_price %}
+        <span>₹{{ include.product.compare_at_price }}</span>
+      {% endif %}
+    </div>
+
+    <button class="btn-primary add-to-cart"
+            data-name="{{ include.product.name }}"
+            data-price="{{ include.product.price }}">
+      Add to cart
+      <span>＋</span>
+    </button>
+
+    {% if include.product.description %}
+      <div class="product-description">
+        {{ include.product.description | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<section class="product-detail-gallery">
+  <h2>You may also like</h2>
+  <div class="products products-inline">
+    {% for other in site.data.products %}
+      {% if other.handle != include.product.handle %}
+        <article class="product">
+          <a href="#product-{{ other.handle }}">
+            <div class="product-image">
+              <span class="product-tag">{{ other.badge }}</span>
+              {% if other.image_url %}
+                <img src="{{ other.image_url | relative_url }}"
+                     alt="{{ other.name }} thumbnail" />
+              {% endif %}
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">{{ other.name }}</h3>
+              <p class="product-meta">{{ other.type }}</p>
+              <div class="price">₹{{ other.price }}</div>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

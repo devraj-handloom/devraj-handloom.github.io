@@ -1,0 +1,36 @@
+<footer class="footer">
+  <div class="page">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="{{ '/assets/images/logo-circle.png' | relative_url }}"
+             alt="DevRaj Maheshwari Handloom logo"
+             class="brand-logo" />
+        <div class="brand-text">
+          <span class="name">devraj</span>
+          <span class="tagline">Maheshwari Handloom</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        {% for item in site.data.navigation %}
+          <a href="{{ item.url | relative_url }}" class="footer-link">
+            {{ item.name }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-meta">
+        <span>&copy; 2026 DevRaj Maheshwari Handloom. All rights reserved.</span>
+        <span>Made with ❤️ in Bhopal, Madhya Pradesh</span>
+      </div>
+
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Privacy Policy</a>
+        <a href="#" class="footer-legal-link">Terms of Service</a>
+        <a href="#" class="footer-legal-link">Shipping</a>
+      </div>
+    </div>
+  </div>
+</footer>

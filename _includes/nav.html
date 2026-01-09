@@ -1,0 +1,26 @@
+<nav class="top-nav">
+  <a href="{{ '/' | relative_url }}" class="brand-link">
+    <div class="brand">
+      <img src="{{ '/assets/images/logo-circle.png' | relative_url }}"
+           alt="DevRaj Maheshwari Handloom logo"
+           class="brand-logo" />
+      <div class="brand-text">
+        <span class="name">devraj</span>
+        <span class="tagline">Maheshwari Handloom</span>
+      </div>
+    </div>
+  </a>
+
+  <button id="menuToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+  <ul class="nav-links" id="navLinks">
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           class="{% if page.url == item.url %}active{% endif %}">
+          {{ item.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

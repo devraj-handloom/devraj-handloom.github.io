@@ -1,0 +1,16 @@
+title: DevRaj Maheshwari Handloom
+description: "Premium Maheshwari handloom sarees."
+baseurl: ""
+url: ""
+
+theme: null
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Optional: Google Analytics or other tracking
+google_analytics: UA-XXXXX-Y
+

@@ -1,0 +1,309 @@
+<section class="contact-map">
+    <div class="section-heading">
+      <h1>Visit Us in Bhopal</h1>
+      <p class="section-sub">New Market, Bhopal, Madhya Pradesh 462003</p>
+    </div>
+    
+    <!-- Interactive Map Placeholder (Google Maps embed) -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.456!2d77.406!3d23.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c467e8e8e8e8e%3A0x8f8f8f8f8f8f8f8f!2sNew%20Market%2C%20Bhopal!5e0!3m2!1sen!2sin!4v1736500000000" 
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius: 16px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    
+    <div class="map-info">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <div>
+          <strong>New Market</strong><br>
+          Bhopal, MP 462003
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🕒</span>
+        <div>
+          <strong>Open</strong><br>
+          Mon-Sat: 10AM - 8PM
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🚗</span>
+        <div>
+          <strong>Parking</strong><br>
+          Available
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Card Section -->
+  <section class="contact-card">
+    <div class="section-heading centered">
+      <h2>Get In Touch</h2>
+      <p>Book home visits, consultations, or custom orders</p>
+    </div>
+    
+    <div class="business-cards">
+      <!-- Call Card -->
+      <div class="business-card call-card">
+        <div class="card-icon">📞</div>
+        <div class="card-content">
+          <h3>Call Us</h3>
+          <a href="tel:+917775123456" class="card-link large">
+            +91 77751 23456
+          </a>
+          <p>Immediate queries & orders</p>
+        </div>
+      </div>
+
+      <!-- WhatsApp Card -->
+      <div class="business-card whatsapp-card">
+        <div class="card-icon">💬</div>
+        <div class="card-content">
+          <h3>WhatsApp</h3>
+          <a href="https://wa.me/917775123456" class="card-link large" target="_blank">
+            Message Now
+          </a>
+          <p>Share saree preferences</p>
+        </div>
+      </div>
+
+      <!-- Home Visit Card -->
+      <div class="business-card visit-card">
+        <div class="card-icon">🏠</div>
+        <div class="card-content">
+          <h3>Home Visit</h3>
+          <a href="#visit-form" class="card-link large">
+            Book Visit
+          </a>
+          <p>Personal consultation at home</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Visit Form -->
+    <div class="visit-form-container" id="visit-form">
+      <div class="hero-card">
+        <h3>Book Home Visit</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="visit-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+          </div>
+          <input type="email" name="email" placeholder="Email (optional)">
+          <textarea name="preferences" placeholder="Saree preferences, occasion, budget" rows="4"></textarea>
+          <div class="form-row form-actions">
+            <button type="submit" class="btn-primary">
+              Book Visit <span>→</span>
+            </button>
+            <button type="reset" class="btn-outline">Clear</button>
+          </div>
+        </form>
+        <p class="form-note">
+          We'll call within 24 hours to confirm. Free for orders above ₹15,000.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<style>
+    /* Contact Page */
+.contact-page {
+  padding-top: 20px;
+}
+
+.contact-map {
+  padding: 40px 0 60px;
+}
+
+.map-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 32px 0;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.info-icon {
+  font-size: 20px;
+  min-width: 32px;
+  margin-top: 2px;
+}
+
+.contact-card {
+  padding: 80px 0;
+  background: #fdf9f5;
+}
+
+.section-heading.centered {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-sub {
+  font-size: 16px;
+  color: #6b5a4a;
+}
+
+/* Business Cards */
+.business-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.business-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.business-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.call-card::before { background: #4a0b1a; }
+.whatsapp-card::before { background: #25D366; }
+.visit-card::before { background: var(--accent); }
+
+.business-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 48px;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.call-card .card-icon { background: rgba(74, 11, 26, 0.1); }
+.whatsapp-card .card-icon { background: rgba(37, 211, 102, 0.1); }
+.visit-card .card-icon { background: rgba(201, 164, 92, 0.1); }
+
+.card-content h3 {
+  font-size: 22px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.card-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.card-link.large:hover {
+  color: var(--accent);
+}
+
+.card-content p {
+  color: #7b6b5a;
+  margin-top: 4px;
+}
+
+/* Visit Form */
+.visit-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.visit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row.form-actions {
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+input, textarea {
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(74, 11, 26, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-note {
+  text-align: center;
+  font-size: 13px;
+  color: #7b6b5a;
+  margin-top: 16px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .business-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .map-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>

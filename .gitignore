@@ -1,0 +1,53 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# Bundler (vendor/bundle is SAFE TO COMMIT)
+# vendor/bundle/     # ← KEEP this line COMMENTED
+.bundle/
+
+# Gemfile.lock (GitHub Pages regenerates)
+Gemfile.lock
+
+# OS/Editor
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Runtime
+tmp/
+tmp/*
+
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+vendor/
+
+# rbenv (Ubuntu)
+.rbenv-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+
+# Documentation
+docs/_build/

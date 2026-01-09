@@ -1,0 +1,29 @@
+<div class="products" id="product-grid">
+    {% for p in site.data.products %}
+    <article class="product" data-handle="{{ p.handle }}">
+        <div class="product-thumb" data-handle="{{ p.handle }}">
+            <div class="product-image">
+                <span class="product-tag">{{ p.badge }}</span>
+                {% if p.image_url %}
+                <img src="{{ p.image_url | relative_url }}" alt="{{ p.name }}" />
+                {% else %}
+                <div class="image-placeholder">{{ p.name }}</div>
+                {% endif %}
+            </div>
+            <h3 class="product-name">{{ p.name }}</h3>
+            <p class="product-meta">{{ p.type }} • {{ p.color }}</p>
+            <div class="product-bottom">
+                <div class="price">
+                    ₹{{ p.price }}
+                    {% if p.compare_at_price %}
+                    <span>₹{{ p.compare_at_price }}</span>
+                    {% endif %}
+                </div>
+                <button class="btn-outline add-to-cart" data-name="{{ p.name }}" data-price="{{ p.price }}">
+                    Add
+                </button>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</div>
