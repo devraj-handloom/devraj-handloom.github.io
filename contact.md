@@ -9,7 +9,7 @@ permalink: /contact/
   <section class="contact-map">
     <div class="section-heading">
       <h1>Visit Us in Bhopal</h1>
-      <p class="section-sub">New Market, Bhopal, Madhya Pradesh 462003</p>
+      <p class="section-sub">Danish Kunj Kolar Rd, Bhopal, Madhya Pradesh 462042</p>
     </div>
     
     <!-- Interactive Map Placeholder (Google Maps embed) -->
